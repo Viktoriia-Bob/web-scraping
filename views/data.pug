@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1=title
+    .grid-container
+        each item in data
+            .grid-item
+                a(href=item.storePage)
+                    img(src=item.image alt='login' style='width:200px; height:200px;')
+                    p=item.title
